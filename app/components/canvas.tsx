@@ -205,6 +205,7 @@ export default function Canvas({ xs, sm, tempMsg, updateTempMsg }: { xs: number,
 
     const sendJPEGToBackend = () => {
         const canvas = canvasRef.current;
+        console.log(canvas)
         if (!canvas) return;
         
         const imgDataUrl = canvas.toDataURL('image/png'); // Converts to a long url
